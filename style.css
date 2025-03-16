@@ -98,6 +98,11 @@ body {
     margin: 0 auto;
 }
 
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
 /* Section Comment acheter */
 .how-to-buy {
     padding: 60px 0;
@@ -147,6 +152,12 @@ body {
     padding: 20px;
     background: #f4f4f4;
     border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.advantage:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .advantage i {
@@ -225,4 +236,20 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content, .about, .how-to-buy, .advantages, .community {
+    animation: fadeIn 1s ease-out;
 }
