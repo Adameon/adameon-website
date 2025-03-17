@@ -1,276 +1,68 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Section Hero */
-.hero {
-    background: url('background.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 100px 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
     text-align: center;
-    position: relative;
 }
 
-.hero .logo {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.hero nav {
+nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a1a1a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.hero nav ul {
+.logo img {
+    width: 120px;
+}
+
+nav ul {
     list-style: none;
     display: flex;
 }
 
-.hero nav ul li {
-    margin-left: 20px;
+nav ul li {
+    margin: 0 15px;
 }
 
-.hero nav ul li a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
-    font-weight: bold;
+    color: white;
     transition: color 0.3s;
 }
 
-.hero nav ul li a:hover {
-    color: #007bff;
+nav ul li a:hover {
+    color: #e94560;
 }
 
-.hero-content {
-    margin-top: 50px;
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    padding: 150px 20px;
+    margin-top: 60px;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
+.cta-button {
+    background-color: #e94560;
+    color: white;
+    padding: 15px 30px;
     border-radius: 5px;
-    transition: background 0.3s, transform 0.3s;
+    text-decoration: none;
 }
 
-.btn:hover {
-    background: #0056b3;
-    transform: scale(1.05);
-}
-
-/* Section À propos */
-.about {
-    padding: 60px 0;
-    background: #fff;
-}
-
-.about h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-    color: #007bff;
-}
-
-.about p {
-    text-align: center;
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.highlight {
-    color: #007bff;
-    font-weight: bold;
-}
-
-/* Section Comment acheter */
-.how-to-buy {
-    padding: 60px 0;
-    background: #f4f4f4;
-}
-
-.how-to-buy h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-    color: #007bff;
-}
-
-.how-to-buy ol {
-    text-align: left;
-    list-style-position: inside;
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 30px;
-}
-
-.how-to-buy ol li {
-    margin-bottom: 10px;
-}
-
-/* Section Avantages */
-.advantages {
-    padding: 60px 0;
-    background: #fff;
-}
-
-.advantages h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #007bff;
-}
-
-.advantages-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.advantage {
-    text-align: center;
+.feature {
+    background: #1a1a2e;
     padding: 20px;
-    background: #f4f4f4;
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.advantage:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.advantage i {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.advantage h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.advantage p {
-    font-size: 1rem;
-}
-
-/* Section Communauté */
-.community {
-    padding: 60px 0;
-    background: #f4f4f4;
-}
-
-.community h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-    color: #007bff;
-}
-
-.community p {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 400px;
 }
 
 .social-links a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.3s;
-}
-
-.social-links a:hover {
-    background: #0056b3;
-    transform: scale(1.05);
-}
-
-.social-links a i {
-    margin-right: 10px;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #007bff;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero-content, .about, .how-to-buy, .advantages, .community {
-    animation: fadeIn 1s ease-out;
-}
-
-/* Transitions */
-a, .btn, .advantage, .social-links a {
-    transition: all 0.3s ease;
+    color: #e94560;
+    margin: 10px;
+    font-weight: bold;
 }
