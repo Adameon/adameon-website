@@ -5,15 +5,18 @@ body {
     text-align: center;
 }
 
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #1a1a1a;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    align-items: center;
 }
 
 .logo img {
@@ -40,9 +43,9 @@ nav ul li a:hover {
 }
 
 #hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    padding: 150px 20px;
-    margin-top: 60px;
+    background: url('assets/bg.jpg') no-repeat center center/cover;
+    padding: 200px 20px;
+    position: relative;
 }
 
 .cta-button {
@@ -51,6 +54,13 @@ nav ul li a:hover {
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 .feature {
@@ -59,10 +69,21 @@ nav ul li a:hover {
     border-radius: 10px;
     margin: 20px auto;
     max-width: 400px;
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .social-links a {
     color: #e94560;
     margin: 10px;
     font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
 }
