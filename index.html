@@ -3,103 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adameon (ADM) - La crypto des paiements urbains</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Adameon - Sécurisez votre argent contre la digitalisation économique.">
+    <title>Adameon - Liberté Financière</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script defer src="news-api.js"></script>
 </head>
 <body>
-    <!-- Section Hero -->
-    <section class="hero">
-        <div class="container">
-            <nav>
-                <img src="logo.png" alt="Logo Adameon" class="logo">
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#how-to-buy">Comment acheter</a></li>
-                    <li><a href="#advantages">Avantages</a></li>
-                    <li><a href="#community">Communauté</a></li>
-                </ul>
-            </nav>
-            <div class="hero-content">
-                <h1>Adameon (ADM)</h1>
-                <p>La cryptomonnaie qui révolutionne les paiements urbains. Simplifiez vos transactions quotidiennes avec ADM.</p>
-                <a href="https://pancakeswap.finance/" target="_blank" class="btn">Acheter ADM</a>
-            </div>
+    <header>
+        <nav>
+            <div class="logo"><img src="logo.png" alt="Adameon"></div>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#features">Pourquoi Adameon ?</a></li>
+                <li><a href="#news">Actualités</a></li>
+                <li><a href="#community">Communauté</a></li>
+                <li><a href="#buy">Acheter ADM</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Adameon - Protégez votre Avenir</h1>
+        <p>Face à la centralisation bancaire, Adameon vous offre une cryptomonnaie **sécurisée et libre**.</p>
+        <a href="#buy" class="cta-button">Acheter ADM</a>
+    </section>
+
+    <section id="about">
+        <h2>Pourquoi Adameon ?</h2>
+        <p>Les banques et les gouvernements **contrôlent votre argent**. Adameon est une réponse claire : **liberté financière, anonymat, inviolabilité**.</p>
+    </section>
+
+    <section id="features">
+        <h2>Les Fondations d'Adameon</h2>
+        <div class="feature">
+            <h3>🔐 Sécurité Maximale</h3>
+            <p>Grâce à la blockchain avancée d’Adameon, vos fonds sont protégés à **100%**.</p>
+        </div>
+        <div class="feature">
+            <h3>🌍 Liberté Financière</h3>
+            <p>Plus besoin de banques, plus de surveillance. **Adameon = Votre argent, votre contrôle**.</p>
         </div>
     </section>
 
-    <!-- Section À propos -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>À propos d'Adameon</h2>
-            <p>
-                Adameon (ADM) est une cryptomonnaie décentralisée conçue pour simplifier vos paiements quotidiens. Que ce soit pour payer votre parking, vos petits achats ou d'autres services locaux, ADM offre une solution rapide, sécurisée et économique. Avec Adameon, vous reprenez le contrôle de vos transactions tout en soutenant une économie locale dynamique.
-            </p>
-            <p>
-                <span class="highlight">Notre mission</span> : Révolutionner les paiements urbains en offrant une alternative décentralisée, accessible et équitable à tous.
-            </p>
+    <section id="news">
+        <h2>📰 Actualités Crypto en Direct</h2>
+        <div id="crypto-news"></div>
+    </section>
+
+    <section id="community">
+        <h2>Rejoignez la Communauté</h2>
+        <p>Échangez avec d’autres investisseurs et suivez nos avancées :</p>
+        <div class="social-links">
+            <a href="https://t.me/adameoncrypto">Telegram</a>
+            <a href="https://discord.gg/p3jf2Y5t">Discord</a>
+            <a href="https://x.com/adameoncrypto">X</a>
+            <a href="https://www.instagram.com/adameoncrypto">Instagram</a>
+            <a href="https://www.tiktok.com/@adameoncrypto">TikTok</a>
         </div>
     </section>
 
-    <!-- Section Comment acheter -->
-    <section id="how-to-buy" class="how-to-buy">
-        <div class="container">
-            <h2>Comment acheter ADM ?</h2>
-            <ol>
-                <li><span class="highlight">Téléchargez un portefeuille crypto</span> comme MetaMask ou Trust Wallet.</li>
-                <li><span class="highlight">Achetez des BNB</span> sur Binance ou une autre plateforme d'échange.</li>
-                <li><span class="highlight">Échangez des BNB contre ADM</span> sur PancakeSwap.</li>
-            </ol>
-            <a href="https://pancakeswap.finance/" target="_blank" class="btn">Acheter ADM</a>
-        </div>
-    </section>
-
-    <!-- Section Avantages -->
-    <section id="advantages" class="advantages">
-        <div class="container">
-            <h2>Pourquoi choisir Adameon ?</h2>
-            <div class="advantages-grid">
-                <div class="advantage">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Sécurité</h3>
-                    <p>ADM est basé sur la blockchain Binance Smart Chain, offrant une sécurité et une transparence maximales.</p>
-                </div>
-                <div class="advantage">
-                    <i class="fas fa-wallet"></i>
-                    <h3>Facilité d'utilisation</h3>
-                    <p>Payez vos parkings et petits achats en quelques clics, sans frais cachés.</p>
-                </div>
-                <div class="advantage">
-                    <i class="fas fa-globe"></i>
-                    <h3>Décentralisation</h3>
-                    <p>Adameon est une monnaie décentralisée, vous donnant un contrôle total sur vos finances.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Communauté -->
-    <section id="community" class="community">
-        <div class="container">
-            <h2>Rejoignez la communauté Adameon</h2>
-            <p>
-                Suivez-nous sur nos réseaux sociaux pour rester informé des dernières actualités, participer à des événements exclusifs et faire partie de la révolution des paiements urbains.
-            </p>
-            <div class="social-links">
-                <a href="https://discord.gg/ftgyQb7J" target="_blank"><i class="fab fa-discord"></i> Discord</a>
-                <a href="https://x.com/adameoncrypto" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="https://www.tiktok.com/@adameoncrypto" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
-                <a href="https://www.instagram.com/adameoncrypto/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Adameon (ADM). Tous droits réservés.</p>
-            <p><a href="#about">À propos</a> | <a href="#how-to-buy">Comment acheter</a> | <a href="#community">Communauté</a></p>
-        </div>
+        <p>© 2024 Adameon - La révolution financière. | <a href="#">Mentions légales</a></p>
     </footer>
 </body>
 </html>
