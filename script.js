@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Bienvenue sur Adameon !");
-    alert("Bienvenue sur Adameon - La cryptomonnaie qui protège votre argent !");
 
     // Animation au scroll
     const sections = document.querySelectorAll(".fade-in");
