@@ -75,6 +75,11 @@ body {
     margin-bottom: 30px;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* ===== NAVIGATION ===== */
 nav {
     display: flex;
