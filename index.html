@@ -5,79 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adameon (ADM) - Sécurisez votre argent</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Section Hero -->
-    <header class="hero">
+    <!-- En-tête avec navigation -->
+    <header>
         <div class="container">
+            <a href="#" class="logo"><img src="logo.png" alt="Logo Adameon"></a>
             <nav>
-                <a href="#" class="logo">
-                    <img src="logo.png" alt="Adameon">
-                </a>
                 <ul>
                     <li><a href="#about">À propos</a></li>
                     <li><a href="#how-to-buy">Comment acheter</a></li>
-                    <li><a href="#news">Actualités</a></li>
+                    <li><a href="#advantages">Avantages</a></li>
+                    <li><a href="#news">Actu Crypto</a></li>
                     <li><a href="#community">Communauté</a></li>
                 </ul>
             </nav>
-            <div class="hero-content">
-                <h1>Adameon (ADM)</h1>
-                <p>La cryptomonnaie qui sécurise votre argent et lutte contre la digitalisation économique.</p>
-                <a href="https://pancakeswap.finance/" target="_blank" class="btn">Acheter ADM</a>
-            </div>
         </div>
     </header>
 
+    <!-- Section Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Adameon (ADM)</h1>
+            <p>La cryptomonnaie conçue pour sécuriser votre argent et lutter contre la digitalisation économique.</p>
+            <a href="https://pancakeswap.finance/" target="_blank" class="btn">Acheter ADM</a>
+        </div>
+    </section>
+
     <!-- Section À propos -->
-    <section id="about" class="about">
+    <section id="about">
         <div class="container">
             <h2>À propos d'Adameon</h2>
-            <p>Adameon (ADM) est une cryptomonnaie conçue pour offrir une alternative décentralisée et sécurisée face à la digitalisation bancaire.</p>
+            <p>Adameon (ADM) est une monnaie numérique qui vous redonne le pouvoir sur vos finances. Sécurisez votre argent et échappez à l'influence des banques.</p>
         </div>
     </section>
 
     <!-- Section Comment acheter -->
-    <section id="how-to-buy" class="how-to-buy">
+    <section id="how-to-buy">
         <div class="container">
             <h2>Comment acheter ADM ?</h2>
             <ol>
-                <li>Installez <span class="highlight">MetaMask</span> ou <span class="highlight">Trust Wallet</span>.</li>
-                <li>Achetez des <span class="highlight">BNB</span> sur une plateforme d’échange.</li>
-                <li>Échangez vos BNB contre ADM sur <a href="https://pancakeswap.finance/" target="_blank">PancakeSwap</a>.</li>
+                <li>Installez un portefeuille crypto (MetaMask, Trust Wallet).</li>
+                <li>Achetez des BNB sur Binance ou autre plateforme.</li>
+                <li>Échangez vos BNB contre ADM sur PancakeSwap.</li>
             </ol>
+            <a href="https://pancakeswap.finance/" target="_blank" class="btn">Acheter ADM</a>
         </div>
     </section>
 
-    <!-- Section Actualités crypto -->
-    <section id="news" class="news">
+    <!-- Section Avantages -->
+    <section id="advantages">
         <div class="container">
-            <h2>Actualités Crypto en Direct</h2>
-            <iframe src="https://www.cointribune.com/" frameborder="0"></iframe>
+            <h2>Pourquoi choisir Adameon ?</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Sécurité maximale</h3>
+                    <p>Vos fonds sont protégés sur la blockchain.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Contrôle total</h3>
+                    <p>Aucune banque, aucun intermédiaire.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Utilisation mondiale</h3>
+                    <p>Payez et envoyez de l'argent partout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Actualité Crypto -->
+    <section id="news">
+        <div class="container">
+            <h2>Actualité Crypto en direct</h2>
+            <div id="crypto-news"></div>
         </div>
     </section>
 
     <!-- Section Communauté -->
-    <section id="community" class="community">
+    <section id="community">
         <div class="container">
-            <h2>Rejoignez la communauté</h2>
-            <p>Rejoignez-nous sur nos réseaux sociaux :</p>
+            <h2>Rejoignez notre communauté</h2>
             <div class="social-links">
                 <a href="https://t.me/adameoncrypto"><i class="fab fa-telegram"></i> Telegram</a>
                 <a href="https://discord.gg/p3jf2Y5t"><i class="fab fa-discord"></i> Discord</a>
-                <a href="https://x.com/adameoncrypto"><i class="fab fa-twitter"></i> Twitter</a>
                 <a href="https://www.tiktok.com/@adameoncrypto"><i class="fab fa-tiktok"></i> TikTok</a>
-                <a href="https://www.instagram.com/adameoncrypto/"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://x.com/adameoncrypto"><i class="fab fa-x-twitter"></i> X</a>
+                <a href="https://www.instagram.com/adameoncrypto"><i class="fab fa-instagram"></i> Instagram</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Adameon. Tous droits réservés.</p>
-    </footer>
+        <div class="container">
+            <p>&copy; 2025 Adameon (ADM). Tous droits réservés.</p>
+        </div>
+        </footer>
 
     <script src="script.js"></script>
     
