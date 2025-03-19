@@ -148,10 +148,58 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
+/* ===== WHY CHOOSE ADM SECTION ===== */
+.why-choose-adm {
+    padding: 80px 0;
+    background: #0b0c10;
+}
+
+.why-choose-adm h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+    color: #66fcf1;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.reason {
+    padding: 20px;
+    background: #1f2833;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reason:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(102, 252, 241, 0.3);
+}
+
+.reason i {
+    font-size: 2rem;
+    color: #66fcf1;
+    margin-bottom: 15px;
+}
+
+.reason h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #66fcf1;
+}
+
+.reason p {
+    font-size: 1rem;
+    color: #c5c6c7;
+}
+
 /* ===== HOW TO BUY SECTION ===== */
 .how-to-buy {
     padding: 80px 0;
-    background: #0b0c10;
+    background: #1f2833;
 }
 
 .how-to-buy h2 {
@@ -170,7 +218,7 @@ nav ul li a:hover {
 
 .step {
     padding: 30px;
-    background: #1f2833;
+    background: #0b0c10;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -201,7 +249,7 @@ nav ul li a:hover {
 /* ===== ADVANTAGES SECTION ===== */
 .advantages {
     padding: 80px 0;
-    background: #1f2833;
+    background: #0b0c10;
 }
 
 .advantages h2 {
@@ -220,7 +268,7 @@ nav ul li a:hover {
 
 .advantage {
     padding: 30px;
-    background: #0b0c10;
+    background: #1f2833;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -250,7 +298,7 @@ nav ul li a:hover {
 /* ===== FAQ SECTION ===== */
 .faq {
     padding: 80px 0;
-    background: #0b0c10;
+    background: #1f2833;
 }
 
 .faq h2 {
@@ -268,7 +316,7 @@ nav ul li a:hover {
 
 .faq-item {
     padding: 20px;
-    background: #1f2833;
+    background: #0b0c10;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -380,7 +428,7 @@ footer a:hover {
         font-size: 2.5rem;
     }
 
-    .steps, .advantages-grid, .faq-grid {
+    .steps, .advantages-grid, .faq-grid, .reasons {
         grid-template-columns: 1fr;
     }
 
