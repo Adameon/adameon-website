@@ -124,10 +124,60 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
+/* ===== HOW TO BUY SECTION ===== */
+.how-to-buy {
+    padding: 80px 0;
+    background: #0b0c10;
+}
+
+.how-to-buy h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+    color: #66fcf1;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.step {
+    padding: 30px;
+    background: #1f2833;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(102, 252, 241, 0.3);
+}
+
+.step i {
+    font-size: 2.5rem;
+    color: #66fcf1;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #66fcf1;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #c5c6c7;
+}
+
 /* ===== ADVANTAGES SECTION ===== */
 .advantages {
     padding: 80px 0;
-    background: #0b0c10;
+    background: #1f2833;
 }
 
 .advantages h2 {
@@ -146,7 +196,7 @@ nav ul li a:hover {
 
 .advantage {
     padding: 30px;
-    background: #1f2833;
+    background: #0b0c10;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -160,6 +210,59 @@ nav ul li a:hover {
     font-size: 2.5rem;
     color: #66fcf1;
     margin-bottom: 15px;
+}
+
+.advantage h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #66fcf1;
+}
+
+.advantage p {
+    font-size: 1rem;
+    color: #c5c6c7;
+}
+
+/* ===== FAQ SECTION ===== */
+.faq {
+    padding: 80px 0;
+    background: #0b0c10;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+    color: #66fcf1;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.faq-item {
+    padding: 20px;
+    background: #1f2833;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faq-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(102, 252, 241, 0.3);
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #66fcf1;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #c5c6c7;
 }
 
 /* ===== COMMUNITY SECTION ===== */
@@ -252,10 +355,21 @@ footer a:hover {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    .advantages-grid {
+
+    .steps, .advantages-grid, .faq-grid {
         grid-template-columns: 1fr;
     }
+
     .social-links {
         flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
