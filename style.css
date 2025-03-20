@@ -302,6 +302,58 @@ nav ul li a:hover {
     color: #c5c6c7;
 }
 
+/* ===== NEWS SECTION ===== */
+.news {
+    padding: 80px 0;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+    color: #66fcf1;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-item {
+    padding: 20px;
+    background: #1f2833;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(102, 252, 241, 0.3);
+}
+
+.news-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #66fcf1;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #c5c6c7;
+}
+
+.news-item a {
+    color: #66fcf1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.news-item a:hover {
+    color: #45a29e;
+}
+
 /* ===== FAQ SECTION ===== */
 .faq {
     padding: 80px 0;
@@ -481,7 +533,7 @@ footer a:hover {
         font-size: 2.5rem;
     }
 
-    .steps, .advantages-grid, .faq-grid, .reasons {
+    .steps, .advantages-grid, .faq-grid, .reasons, .news-grid {
         grid-template-columns: 1fr;
     }
 
