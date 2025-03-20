@@ -341,6 +341,11 @@ nav ul li a:hover {
 .news-item p {
     font-size: 1rem;
     color: #c5c6c7;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limite à 3 lignes */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .news-item a {
