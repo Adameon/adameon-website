@@ -11,6 +11,10 @@ body {
     line-height: 1.6;
     background-color: #0b0c10;
     color: #c5c6c7;
+    background-image: url('background.jpg'); /* Ajoute une image de fond */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* Container */
@@ -19,6 +23,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background: rgba(15, 16, 20, 0.9); /* Fond semi-transparent pour le contenu */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* ===== LOGO ===== */
@@ -50,7 +57,6 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('background.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 120px 0;
     text-align: center;
@@ -130,7 +136,6 @@ nav ul li a:hover {
 /* ===== ABOUT SECTION ===== */
 .about {
     padding: 80px 0;
-    background: #1f2833;
 }
 
 .about h2 {
@@ -151,7 +156,6 @@ nav ul li a:hover {
 /* ===== WHY CHOOSE ADM SECTION ===== */
 .why-choose-adm {
     padding: 80px 0;
-    background: #0b0c10;
 }
 
 .why-choose-adm h2 {
@@ -196,10 +200,14 @@ nav ul li a:hover {
     color: #c5c6c7;
 }
 
+.reason.centered {
+    grid-column: 1 / -1; /* Prend toute la largeur */
+    text-align: center;
+}
+
 /* ===== HOW TO BUY SECTION ===== */
 .how-to-buy {
     padding: 80px 0;
-    background: #1f2833;
 }
 
 .how-to-buy h2 {
@@ -249,7 +257,6 @@ nav ul li a:hover {
 /* ===== ADVANTAGES SECTION ===== */
 .advantages {
     padding: 80px 0;
-    background: #0b0c10;
 }
 
 .advantages h2 {
@@ -298,7 +305,6 @@ nav ul li a:hover {
 /* ===== FAQ SECTION ===== */
 .faq {
     padding: 80px 0;
-    background: #1f2833;
 }
 
 .faq h2 {
@@ -340,7 +346,6 @@ nav ul li a:hover {
 /* ===== CONTACT SECTION ===== */
 .contact {
     padding: 80px 0;
-    background: #1f2833;
 }
 
 .contact h2 {
@@ -389,7 +394,6 @@ nav ul li a:hover {
 /* ===== COMMUNITY SECTION ===== */
 .community {
     padding: 80px 0;
-    background: #0b0c10;
 }
 
 .community h2 {
