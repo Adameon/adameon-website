@@ -16,13 +16,35 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(section);
     });
 
-    // Protection contre les attaques XSS
-    const sanitizeInput = (input) => {
-        return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    };
+    // Récupérer les actualités crypto
+    const apiKey = "YOUR_API_KEY"; // Remplace par ta clé API
+    const newsContainer = document.getElementById("crypto-news");
 
-    // Détection des bots
-    if (navigator.webdriver) {
-        alert("Les bots ne sont pas autorisés ici !");
+    async function fetchCryptoNews() {
+        try {
+            const response = await fetch(
+                `https://min-api.cryptocompare.com/data/v2/news/?lang=FR&api_key=${apiKey}`
+            );
+            const data = await response.json();
+            displayNews(data.Data);
+        } catch (error) {
+            console.error("Erreur lors de la récupération des actualités :", error);
+        }
     }
+
+    function displayNews(news) {
+        newsContainer.innerHTML = news
+            .map(
+                (item) => `
+            <div class="news-item">
+                <h3>${item.title}</h3>
+                <p>${item.body}</p>
+                <a href="${item.url}" target="_blank">Lire la suite</a>
+            </div>
+        `
+            )
+            .join("");
+    }
+
+    fetchCryptoNews();
 });
